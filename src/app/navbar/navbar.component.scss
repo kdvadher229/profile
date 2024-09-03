@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .element {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .card {
+    flex: 1;
+    margin: 10px;
+  }
+  @media (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .element {
+      margin: 10px 0;
+    }
+  
+    /* Order elements as per the desired structure */
+    .element-1 {
+      order: 1;
+    }
+  
+    .element-2 {
+      order: 2;
+    }
+  
+    .cards .card:nth-child(1) {
+      order: 3;
+    }
+  
+    .cards .card:nth-child(2) {
+      order: 4;
+    }
+  
+    .element-3 {
+      order: 5;
+    }
+  
+    /* Stack the cards vertically in mobile view */
+    .cards {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
